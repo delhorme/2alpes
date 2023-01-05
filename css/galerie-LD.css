@@ -2,68 +2,64 @@
  * Galerie-LD CSS - v1 - 2023-01-05
  * Copyright 2023, Delhorme Laurent
 */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #444;
-}
-
-main {
-  padding: 0 0.5rem;
-  height: 100vh;
-}
-
-.image--gallery {
-  width: 100%;
-  height: 32rem;
-  display: block;
-  margin: auto;
-  border: 5px solid #222;
-  object-fit: cover;
-}
-
-.image--selection {
+/* (A) WHOLE PAGE */
+* { box-sizing: border-box; }
+body { background: #eee; }
+ 
+/* (B) GALLERY WRAPPER */
+.gallery {
+  /* (B1) GRID LAYOUT - 3 IMAGES PER ROW */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-  justify-content: center;
-  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+ 
+  /* (B2) OPTIONAL WIDTH RESTRICT */
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.image__item {
+/* (C) GALLERY IMAGES */
+.gallery img {
+  /* (C1) DIMENSION */
   width: 100%;
-  height: 8rem;
-  display: block;
-  margin: auto;
-  margin-bottom: 0.5rem;
-  border: 5px solid #222;
-  object-fit: cover;
-  cursor: pointer;
+  height: 150px; /* optional */
+  padding: 10px;
+ 
+  /* (C2) COLORS */
+  border: 1px solid #ddd;
+  background: #fff;
+ 
+  /* (C3) IMAGE RESIZE */
+  /* cover | contain | fill | scale-down */
+  object-fit: contain;
+  position: relative;
 }
 
-.loader {
-  text-align: center;
-  margin-top: 20%;
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-}
-
-.animate-entrance {
-  animation: BounceIn 0.8s;
-}
-
-@keyframes BounceIn {
-  0% {
-    transform: scale(0.8);
-    opacity: 0;
+/* (D) ON SMALL SCREENS - 2 IMAGES PER ROW */
+@media only screen and (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
   }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+}
+
+/* (E) OPTIONAL ZOOM ON HOVER */
+.gallery img:hover {
+  z-index: 9;
+  transform: scale(1.3);
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  transition: transform ease 0.5s;
+}
+
+/* (F) FULLSCREEN MODE */
+.gallery img.full {
+  position: fixed;
+  top: 0; left: 0; z-index: 999;
+  width: 100vw; height: 100vh;
+  object-fit: fit;
+  background: rgba(0, 0, 0, 0.7);
+}
+.gallery img.full:hover {
+  z-index: 999;
+  transform: none;
 }
