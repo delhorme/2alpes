@@ -1,0 +1,69 @@
+/*
+ * Galerie-LD CSS - v1 - 2023-01-05
+ * Copyright 2023, Delhorme Laurent
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #444;
+}
+
+main {
+  padding: 0 0.5rem;
+  height: 100vh;
+}
+
+.image--gallery {
+  width: 100%;
+  height: 32rem;
+  display: block;
+  margin: auto;
+  border: 5px solid #222;
+  object-fit: cover;
+}
+
+.image--selection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  justify-content: center;
+  align-items: center;
+}
+
+.image__item {
+  width: 100%;
+  height: 8rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  border: 5px solid #222;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.loader {
+  text-align: center;
+  margin-top: 20%;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.animate-entrance {
+  animation: BounceIn 0.8s;
+}
+
+@keyframes BounceIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
