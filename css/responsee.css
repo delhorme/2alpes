@@ -10,6 +10,7 @@
   box-sizing:border-box;
   margin:0;	
 }
+
 body {
   background:none repeat scroll 0 0 #eeeeee;
   font-size:16px;
@@ -834,6 +835,10 @@ nav.breadcrumb-nav ul li:last-child:after {content:"";}
   .size-960,.size-1140,.size-1280,.size-1520 {max-width:768px;}
   .hide-xxl,.hide-xl,.hide-l,.hide-s {display:initial!important;}
   .hide-m {display:none!important;}
+  
+  #qrcode {
+  display: none;
+    }
   nav {
     display:block;
     cursor:pointer;
