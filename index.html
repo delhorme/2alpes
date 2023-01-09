@@ -24,7 +24,7 @@
       <nav>
          <div class="qrcode">
             <img src="img/qr code site 2 alpes petit.png" width=15% height=15% title="Version mobile !" id="qrcode">
-         </div>   
+         </div>
          <div class="line">
             <!-- Mobile version of logo -->
             <div class="logo logo-small">
@@ -84,7 +84,7 @@
    <section>
       <!-- CAROUSEL -->
       <div id="carousel">
-         <div id="header-carousel" class="owl-carousel owl-theme" >
+         <div id="header-carousel" class="owl-carousel owl-theme">
             <div class="item">
                <img src="img/car1.JPG" alt="">
                <div class="carousel-text">
@@ -157,8 +157,9 @@
             </div>
          </div>
       </div>
+
       <!-- FIRST BLOCK -->
-      <!-- <div id="first-block">
+      <!--<div id="first-block">
          <div class="line">
             <h2>Au coeur de la station des 2 alpes</h2>
             <p class="subtitile">L'appartement est situé à mi-parcour de l'avenue de la Muzelle.
@@ -186,19 +187,46 @@
                </div>
             </div>
          </div>
-      </div>-->
+      </div>
+      -->
+
       <!-- SECOND BLOCK -->
-      <!--<div id="second-block">
+      <div id="second-block">
          <div class="line">
             <div class="margin-bottom">
                <div class="margin">
                   <article class="s-12 l-8 center">
-                     <h1>Amazing title</h1>
-                     <p class="margin-bottom">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-                        veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                        consequat.
-                     </p>
+                     <p class="margin-bottom">
+                     <h4 style="color: rgb(255, 255, 255)">
+                     Station de ski phare du département de l’Isère, Les 2 Alpes jouit d’une réputation internationale.
+                     Elle est située au cœur du massif des Ecrins, dans l’Oisans.
+                     Avec une neige naturelle garantie grâce au glacier culminant à 3600m d’altitude, vous avez l’assurance de skier en toute saison.
+                     </h4>
+                     <BR>
+                     <h1>Présentation de l'appartement</h1>
+                     <h4 style="color: rgb(255, 255, 255)">
+                        L'appartement est au 1er étage (sans ascenseur) d'une résidence située au coeur de la
+                        station des 2 alpes.
+                     </h4>
+                     <h4 style="color: rgb(255, 255, 255)">
+                        Bel appartement de 25m² au sol, nous l'avons décoré avec soin et aménagé pour accueillir
+                        confortablement 4 personnes.
+                     </h4>
+                     <h4 style="color: rgb(255, 255, 255)">
+                        Il est composé d'une entrée, d'un coin montagne avec 2 lits superposés, d'une pièce a vivre
+                        (salon/salle à manger, cuisine ouverte) donnant sur un balcon de 9m² orienté sud, une salle de
+                        bain et WC séparés. Chauffage électrique.
+                     </h4>
+                     <h4 style="color: rgb(255, 255, 255)">
+                        Une cave à ski en rez de chaussée.
+                     </h4>
+                     <h4 style="color: rgb(255, 255, 255)">
+                        Parking privée.
+                     </h4>
+                     <BR>
+                     <h4 style="color: rgb(255, 255, 255)">
+                        APPARTEMENT NON FUMEUR. LES ANIMAUX NE SONT PAS ADMIS.
+                     </h4>
                      <a class="button rounded-btn submit-btn s-12 l-4 center" href="Photos.html">Read more</a>
                   </article>
                </div>
@@ -264,50 +292,51 @@
                </div>
             </div>
          </div>
-      </div>-->
-   </section>
-   <!-- FOOTER -->
-   <footer>
-      <div class="line">
-         <div class="s-12 l-6">
-            <p>Copyright 2023
-            </p>
-         </div>
-         <div class="s-12 l-6">
-            <p class="right">
-               <a class="right" href="http://www.myresponsee.com"
-                  title="Responsee - lightweight responsive framework">Design and coding by Kandahar204</a>
-            </p>
-         </div>
       </div>
-   </footer>
-   <script type="text/javascript" src="js/responsee.js"></script>
-   <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
-   <script type="text/javascript">
-      jQuery(document).ready(function ($) {
-         var owl = $('#header-carousel');
-         owl.owlCarousel({
-            nav: true,
-            dots: false,
-            items: 1,
-            loop: true,
-            navText: ["&#xf007", "&#xf006"],
-            autoplay: true,
-            autoplayTimeout: 4000
+   </section>
+   -->
+      <!-- FOOTER -->
+      <footer>
+         <div class="line">
+            <div class="s-12 l-6">
+               <p>Copyright 2023
+               </p>
+            </div>
+            <div class="s-12 l-6">
+               <p class="right">
+                  <a class="right" href="http://www.myresponsee.com"
+                     title="Responsee - lightweight responsive framework">Design and coding by Kandahar204</a>
+               </p>
+            </div>
+         </div>
+      </footer>
+      <script type="text/javascript" src="js/responsee.js"></script>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+      <script type="text/javascript">
+         jQuery(document).ready(function ($) {
+            var owl = $('#header-carousel');
+            owl.owlCarousel({
+               nav: true,
+               dots: false,
+               items: 1,
+               loop: true,
+               navText: ["&#xf007", "&#xf006"],
+               autoplay: true,
+               autoplayTimeout: 4000
+            });
+            var owl = $('#news-carousel');
+            owl.owlCarousel({
+               nav: true,
+               dots: false,
+               items: 1,
+               loop: true,
+               navText: ["&#xf007", "&#xf006"],
+               autoplay: true,
+               autoplayTimeout: 4000
+            });
          });
-         var owl = $('#news-carousel');
-         owl.owlCarousel({
-            nav: true,
-            dots: false,
-            items: 1,
-            loop: true,
-            navText: ["&#xf007", "&#xf006"],
-            autoplay: true,
-            autoplayTimeout: 4000
-         });
-      });
 
-   </script>
+      </script>
 </body>
 
 </html>
