@@ -16,6 +16,7 @@
       rel='stylesheet' type='text/css'>
    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+   <script type="text/javascript" src="js/galerie-LD.js"></script>
 </head>
 
 <body class="size-1140">
@@ -84,11 +85,23 @@
          </div>
       </div>
       <div id="content">
-         <div class="line">
-            <p class="s-12 m-12 l-8 center">
+
+         <div id="password-page">
+            <form>
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password">
+                <button type="button" onclick="checkPassword()">Envoyer</button>
+            </form>
+        </div>
+        <div id="content" style="display: none;">
+            <!-- Contenu de la page protégée -->
+
+        
+
+            <p class="s-12 m-12 l-8 center"></p>
                <h2>Descriptif de la station</h2>
               <p style="white-space: pre-line; text-align: left;">La station de ski des 2 Alpes est une station de ski située dans les Alpes du Nord en France. Elle possède plusieurs atouts tels que :</p>
-              <p style="white-space: pre-line; text-align: left;">une grande variété de pistes adaptées à tous les niveaux,
+              <p style="white-space: pre-line; text-align: left;">une grande variété de pistes adaptées à tous les niveaux,</p>
                <p style="white-space: pre-line; text-align: left;" >une longue saison de ski,</p>
                <p style="white-space: pre-line; text-align: left;">des installations modernes et bien entretenues,</p>
                <p style="white-space: pre-line; text-align: left;">une vie nocturne animée,</p>
@@ -123,7 +136,6 @@
                <p style="white-space: pre-line; text-align: left;">Informations sur les modalités de location et les conditions d'annulation</p>
                
                <p style="white-space: pre-line; text-align: left;">Informations sur les moyens de transport pour accéder à l'appartement.</p>
-
 
          </div>
       </div>
