@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Free responsive business website template</title>
+   <link rel="stylesheet" href="css/components.css">
+   <link rel="stylesheet" href="css/icons.css">
+   <link rel="stylesheet" href="css/responsee.css">
+   <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+   <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+   <!-- favicon au format PNG -->
+   <link rel="icon" href="img/favicon.png" type="image/png">
+   <!-- CUSTOM STYLE -->
+   <link rel="stylesheet" href="css/template-style.css">
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext'
+      rel='stylesheet' type='text/css'>
+   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+   <script type="text/javascript" src="js/galerie-LD.js"></script>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Masonry Layout con CSS Grid</title>
+
+
+
+
+
+</head>
+
+<body class="size-1140">
+   <!-- TOP NAV WITH LOGO -->
+   <header>
+      <nav>
+         <div class="qrcode">
+            <img src="img/qr code site 2 alpes petit.png" width=15% height=15% title="Version mobile !" id="qrcode">
+         </div>
+         <div class="line">
+            <!-- Mobile version of logo -->
+            <div class="logo logo-small">
+               <a href="index.html">Kandahar 204 <br /><strong> 2 ALPES</strong></a>
+            </div>
+            <div class="top-nav">
+               <ul class="s-12 l-5 top-ul chevron">
+                  <div class="right">
+                     <li><a href="index.html">Home</a>
+                      <!--</li>
+                        <li>
+                        <a>Visite</a>
+                        <ul>
+                           <li><a href="sejour.html">Séjour</a>
+                           </li>
+                           <li><a href="Cuisine.html">Cuisine</a>
+                           </li>
+                           <li><a href="Salle de bain.html">Salle de bain</a>
+                           </li>
+                        </ul>
+                     </li>
+                     -->
+                     <li><a href="photos.html">Photos</a>
+                  </div>
+               </ul>
+               <ul class="s-12 l-2">
+                  <li class="logo hide-s hide-m">
+                     <a href="index.html"><strong>LES 2 ALPES</strong><br /><br />Kandahar<br /><br />204</a>
+                  </li>
+               </ul>
+               <ul class="s-12 l-5 right top-ul chevron">
+                  <li><a href="situation.html">Situation</a>
+                  </li>
+                  <!--
+                  <li><a href="calendrier.html">calendrier</a>
+                  </li>
+                  -->
+                  <li><a href="arrivée.html">Votre arrivée</a>
+                  </li>
+                  <li><a href="contact.html">Contact</a>
+                  </li>
+                  <li><a href="reste à faire.html">+</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+
+
+
+
+
+   <section>
+      <div id="head">
+
+      </div>
+      <div id="content">
+
+            <!-- Contenu de la page protégée -->
+
+            <p class="s-12 m-12 l-8 center"></p>
+            <!--   <h1>Livre d'or</h1> -->
+  
+               <!-- Section des commentaires -->
+               <div id="comments">
+                 <h2>Commentaires :</h2>
+                 <ul id="comments-list">
+                   <!-- Les commentaires seront affichés ici -->
+                 </ul>
+               </div>
+               
+               <!-- Formulaire pour ajouter un commentaire -->
+               <form id="comment-form" action="submit_comment.php" method="POST">
+                  <label for="name">Nom :</label>
+                  <input type="text" id="name" name="name" required>
+                  <br><br> <!-- Ajout de deux retours à la ligne après le champ "Nom" -->
+                  
+                  <label for="message">Message :</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+                  <br><br> <!-- Ajout de deux retours à la ligne après le champ "Nom" -->
+                  <button type="submit">Ajouter un commentaire</button>
+                </form>
+               
+               <script src="script.js"></script>
+      </div>
+
+   <!-- FOOTER -->
+   <footer>
+      <div class="line">
+         <div class="s-12 l-6">
+            <p>Copyright 2023
+            </p>
+         </div>
+         <div class="s-12 l-6">
+            <p class="right">
+               <a class="right" href="http://www.myresponsee.com"
+                  title="Responsee - lightweight responsive framework">Design and coding by Kandahar204</a>
+            </p>
+         </div>
+      </div>
+   </footer>
+   <script type="text/javascript" src="js/responsee.js"></script>
+   <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+   <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+         var owl = $('#news-carousel');
+         owl.owlCarousel({
+            nav: true,
+            dots: false,
+            items: 1,
+            loop: true,
+            navText: ["&#xf007", "&#xf006"],
+            autoplay: true,
+            autoplayTimeout: 4000
+         });
+      });
+
+   </script>
+</body>
+
+</html>
